@@ -3,13 +3,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  background: #314D5B;
+}
 .users-edit {
-  background: #ffffff;
-  padding: 10px 30px 40px;
+  background: #314D5B;
   width: 560px;
   box-shadow: 0 0 20px rgba(30, 30, 30, 0.5);
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 50%;
   margin-left: -280px;
   transition: opacity 0.3s, margin-top 0.5s;
@@ -19,15 +21,49 @@
   margin-top: -600px;
 }
 .users-edit h2 {
+  padding: 20px 0 0 ;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Segoe UI", sans-serif;
+}
+.name {
+  color: #ffffff;
+}
+.form__title {
+  margin: 0 0 20px 0 ;
+  background: #253A47;
+  height: 70px;
+  width: 100%;
+}
+.form__field {
+  padding: 0 20px ;
+}
+.form__footer {
+  background: #349886;
+  height: 50px;
 }
 .field-row {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+.field-row span {
+  color: #DA4B46;
+}
+.field-row select {
+  border-radius: 4px;
+  height: 25px;
+  background: #466d81;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  border: 1px solid #21323E;
 }
 .field-row > label {
-  width: 150px;
+  width: 110px;
   display: inline-block;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
 }
 .field-row > input {
   width: 345px;
@@ -41,32 +77,40 @@
 .field-row > textarea {
   border-radius: 4px;
   padding: 4px 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #21323E;
   outline: none;
+  color: #ffffff;
+  background: #466d81;
+  resize: none;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+}
+.fa {
+  padding-right: 3px;
 }
 .btn {
+  color: #ffffff;
+  margin: 15px 0 0 100px;
   padding: 4px 20px;
   border: none;
   transition: background .3s;
   cursor: pointer;
 }
 .btn.btn-new {
-  background: #9ea;
+  background: #41BEA8;
 }
 .btn.btn-new:hover {
-  background: #9fb;
+  background: #2A7A6B;
 }
-.btn.btn-save {
-  background: #9ae;
-}
-.btn.btn-save:hover {
-  background: #9bf;
-}
+.btn.btn-save,
 .btn.btn-cancel {
-  background: #ccc;
+  background: #41BEA8;
+  color: #ffffff;
+  font-weight: 600;
 }
+.btn.btn-save:hover,
 .btn.btn-cancel:hover {
-  background: #eee;
+  background: #2A7A6B;
 }
 #users-table {
   margin-top: 10px;
