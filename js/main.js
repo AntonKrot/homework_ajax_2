@@ -36,12 +36,16 @@ xhr.addEventListener("readystatechange", function () {
 
         var btnRemove = document.createElement("button");
         btnRemove.setAttribute("id", pars[i].id);
+        btnRemove.style.backgroundColor = "#E75454";
+        btnRemove.style.borderRadius = "4px";
         newTd.appendChild(btnRemove);
         var textRemove = document.createTextNode("Remove");
         btnRemove.appendChild(textRemove);
 
         var btnEdit = document.createElement("button");
         newTd.appendChild(btnEdit);
+        btnEdit.style.backgroundColor = "#41BEA8";
+        btnEdit.style.borderRadius = "4px";
         var textEdit = document.createTextNode("Edit");
         btnEdit.appendChild(textEdit);
         removeRow(btnRemove, i, pars);
@@ -143,12 +147,16 @@ var fullName = document.getElementById("fullname"),
 
         var btnRemove = document.createElement("button");
         btnRemove.setAttribute("id", user.id);
+        btnRemove.style.backgroundColor = "#E75454";
+        btnRemove.style.borderRadius = "4px";
         newTd.appendChild(btnRemove);
         var textRemove = document.createTextNode("Remove");
         btnRemove.appendChild(textRemove);
 
         var btnEdit = document.createElement("button");
         newTd.appendChild(btnEdit);
+        btnEdit.style.backgroundColor = "#41BEA8";
+        btnEdit.style.borderRadius = "4px";
         var textEdit = document.createTextNode("Edit");
         btnEdit.appendChild(textEdit);
 
